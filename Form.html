@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/iiitlogo.jpg" alt="iiitlogo" class="Header__logo" />
+      <h2 class="Header__heading">HTML Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="Introduction.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li>
+            <a href="Basic.html" class="Sidebar__link">Basic</a>
+          </li>
+          <li>
+            <a href="Elements.html" class="Sidebar__link">Elements</a>
+          </li>
+          <li>
+            <a href="Attributes.html" class="Sidebar__link">Attributes</a>
+          </li>
+          <li><a href="Headings.html" class="Sidebar__link">Headings</a></li>
+          <li>
+            <a href="Paragraphs.html" class="Sidebar__link">Paragraphs</a>
+          </li>
+          <li><a href="Styles.html" class="Sidebar__link">Styles</a></li>
+          <li>
+            <a href="Formatting.html" class="Sidebar__link">Formatting</a>
+          </li>
+          <li><a href="Css.html" class="Sidebar__link">Css</a></li>
+          <li><a href="Links.html" class="Sidebar__link">Links</a></li>
+          <li><a href="Images.html" class="Sidebar__link">Images</a></li>
+          <li><a href="Tables.html" class="Sidebar__link">Tables</a></li>
+          <li><a href="Lists.html" class="Sidebar__link">Lists</a></li>
+          <li><a href="Classes.html" class="Sidebar__link">Classes</a></li>
+          <li><a href="Id.html" class="Sidebar__link">Id</a></li>
+          <li><a href="Head.html" class="Sidebar__link">Head</a></li>
+          <li>
+            <a href="Block&inline.html" class="Sidebar__link">Block&inline</a>
+          </li>
+        </ul>
+
+        <ul>
+          <h3>HTML Forms</h3>
+          <li class="active">
+            <a href="Form.html" class="Sidebar__link">Form</a>
+          </li>
+          <li>
+            <a href="FormElements.html" class="Sidebar__link">Form Elements</a>
+          </li>
+          <li>
+            <a href="Inputtypes.html" class="Sidebar__link">Input types</a>
+          </li>
+          <li>
+            <a href="InputAttributes.html" class="Sidebar__link"
+              >Input Attributes</a
+            >
+          </li>
+          <li>
+            <a href="InputFormAttributes.html" class="Sidebar__link"
+              >Input Form Attributes</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <h3>HTML Media</h3>
+          <li><a href="Video.html" class="Sidebar__link">Video</a></li>
+          <li><a href="Svg.html" class="Sidebar__link">Svg</a></li>
+        </ul>
+      </div>
+      <div class="Sidebar__footer">
+        <img src="img/iiit2.jpg" alt="iiit" />
+        <p>&#169; All Rights reserved</p>
+      </div>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="Introduction.htmls" class="Navbar__text active">Html Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>HTML Forms</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="Block&inline.html" class="Container__Button">Previous</a>
+        <a href="FormElements.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+        <p class="intro">
+          An HTML form is used to collect user input. The user input is most
+          often sent to a server for processing.
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          <form action="/action_page.php" target="_blank">
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" value="John" /><br />
+            <label for="lname">Last name:</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              value="Doe"
+            /><br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <div>
+        <h2>The &lt;form&gt; Element</h2>
+        <p>
+          The HTML <code class="codehighlighter">&lt;form&gt;</code> element is
+          used to create an HTML form for user input:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;form&gt;<br />
+          .<br />
+          <i>form elements</i><br />
+          .<br />
+          &lt;/form&gt;<br />
+        </div>
+      </div>
+      <div>
+        <p>
+          The <code class="codehighlighter">&lt;form&gt;</code> element is a
+          container for different types of input elements, such as: text fields,
+          checkboxes, radio buttons, submit buttons, etc.
+        </p>
+      </div>
+      <div>
+        <h2>The &lt;input&gt; Element</h2>
+        <p>
+          The HTML <code class="codehighlighter">&lt;input&gt;</code> element is
+          the most used form element.
+        </p>
+        <p>
+          An <code class="codehighlighter">&lt;input&gt;</code> element can be
+          displayed in many ways, depending on the
+          <code class="codehighlighter">type</code> attribute.
+        </p>
+        <p>Here are some examples:</p>
+      </div>
+      <table class="Container__table">
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>&lt;input type=&quot;text&quot;&gt;</td>
+          <td>Displays a single-line text input field</td>
+        </tr>
+        <tr>
+          <td>&lt;input type=&quot;radio&quot;&gt;</td>
+          <td>Displays a radio button (for selecting one of many choices)</td>
+        </tr>
+        <tr>
+          <td>&lt;input type=&quot;checkbox&quot;&gt;</td>
+          <td>
+            Displays a checkbox (for selecting zero or more of many choices)
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;input type=&quot;submit&quot;&gt;</td>
+          <td>Displays a submit button (for submitting the form)</td>
+        </tr>
+        <tr>
+          <td>&lt;input type=&quot;button&quot;&gt;</td>
+          <td>Displays a clickable button</td>
+        </tr>
+      </table>
+    </main>
+    <footer class="Footer">
+      <p>
+        This Tutorial is made By Manish Mohapatra,Alok Kumar and Ritesh Samal.
+        This is only for the purpose of submitting as an assignment to Our
+        proffessor who had given this task to us. The use of this tutorial for
+        any other purposes is completely prohibited.
+      </p>
+      <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>

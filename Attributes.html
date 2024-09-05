@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/iiitlogo.jpg" alt="iiitlogo" class="Header__logo" />
+      <h2 class="Header__heading">HTML Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="Introduction.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li>
+            <a href="Basic.html" class="Sidebar__link">Basic</a>
+          </li>
+          <li>
+            <a href="Elements.html" class="Sidebar__link">Elements</a>
+          </li>
+          <li class="active">
+            <a href="Attributes.html" class="Sidebar__link">Attributes</a>
+          </li>
+          <li><a href="Headings.html" class="Sidebar__link">Headings</a></li>
+          <li>
+            <a href="Paragraphs.html" class="Sidebar__link">Paragraphs</a>
+          </li>
+          <li><a href="Styles.html" class="Sidebar__link">Styles</a></li>
+          <li>
+            <a href="Formatting.html" class="Sidebar__link">Formatting</a>
+          </li>
+          <li><a href="Css.html" class="Sidebar__link">Css</a></li>
+          <li><a href="Links.html" class="Sidebar__link">Links</a></li>
+          <li><a href="Images.html" class="Sidebar__link">Images</a></li>
+          <li><a href="Tables.html" class="Sidebar__link">Tables</a></li>
+          <li><a href="Lists.html" class="Sidebar__link">Lists</a></li>
+          <li><a href="Classes.html" class="Sidebar__link">Classes</a></li>
+          <li><a href="Id.html" class="Sidebar__link">Id</a></li>
+          <li><a href="Head.html" class="Sidebar__link">Head</a></li>
+          <li>
+            <a href="Block&inline.html" class="Sidebar__link">Block&inline</a>
+          </li>
+        </ul>
+
+        <ul>
+          <h3>HTML Forms</h3>
+          <li><a href="Form.html" class="Sidebar__link">Form</a></li>
+          <li>
+            <a href="FormElements.html" class="Sidebar__link">Form Elements</a>
+          </li>
+          <li>
+            <a href="Inputtypes.html" class="Sidebar__link">Input types</a>
+          </li>
+          <li>
+            <a href="InputAttributes.html" class="Sidebar__link"
+              >Input Attributes</a
+            >
+          </li>
+          <li>
+            <a href="InputFormAttributes.html" class="Sidebar__link"
+              >Input Form Attributes</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <h3>HTML Media</h3>
+          <li><a href="Video.html" class="Sidebar__link">Video</a></li>
+          <li><a href="Svg.html" class="Sidebar__link">Svg</a></li>
+        </ul>
+      </div>
+      <div class="Sidebar__footer">
+        <img src="img/iiit2.jpg" alt="iiit" />
+        <p>&#169; All Rights reserved</p>
+      </div>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="Introduction.html" class="Navbar__text active">Html Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>HTML Attributes</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="Elements.html" class="Container__Button">Previous</a>
+        <a href="Headings.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+        <h2>HTML Attributes</h2>
+        <ul>
+          <li>All HTML elements can have <b>attributes</b></li>
+          <li>
+            Attributes provide <b>additional information</b> about elements
+          </li>
+          <li>Attributes are always specified in <b>the start tag</b></li>
+          <li>
+            Attributes usually come in name/value pairs like:
+            <b>name=&quot;value&quot;</b>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>The href Attribute</h2>
+        <p>
+          The <code class="codehighlighter">&lt;a&gt;</code> tag defines a
+          hyperlink. The <code class="codehighlighter">href</code> attribute
+          specifies the URL of the page the link goes to:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;a href=&quot;https://www.w3schools.com&quot;&gt;Visit
+          W3Schools&lt;/a&gt;
+        </div>
+      </div>
+      <div>
+        <h2>The src Attribute</h2>
+        <p>
+          The <code class="codehighlighter">&lt;img&gt;</code> tag is used to
+          embed an image in an HTML page. The
+          <code class="codehighlighter">src</code> attribute specifies the path
+          to the image to be displayed:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;img src=&quot;img_girl.jpg&quot;&gt;
+        </div>
+      </div>
+      <div>
+        <h2>The width and height Attributes</h2>
+        <p>
+          The <code class="codehighlighter">&lt;img&gt;</code> tag should also
+          contain the <code class="codehighlighter">width</code> and
+          <code class="codehighlighter"> height</code> attributes, which
+          specifies the width and height of the image (in pixels):
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot;
+          height=&quot;600&quot;&gt;
+        </div>
+      </div>
+      <div>
+        <h2>The alt Attribute</h2>
+        <p>
+          The required <code class="codehighlighter">alt</code> attribute for
+          the <code class="codehighlighter">&lt;img&gt;</code> tag specifies an
+          alternate text for an image, if the image for some reason cannot be
+          displayed. This can be due to slow connection, or an error in the
+          <code class="codehighlighter">src</code> attribute, or if the user
+          uses a screen reader.
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl with a
+          jacket&quot;&gt;
+        </div>
+      </div>
+      <div>
+        <h2>The style Attribute</h2>
+        <p>
+          The <code class="codehighlighter">style</code> attribute is used to
+          add styles to an element, such as color, font, size, and more.
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;p style=&quot;color:red;&quot;&gt;This is a red
+          paragraph.&lt;/p&gt;
+        </div>
+      </div>
+      <div>
+        <h2>The lang Attribute</h2>
+        <p>
+          You should always include the
+          <code class="codehighlighter">lang</code> attribute inside the
+          <code class="codehighlighter">&lt;html&gt;</code> tag, to declare the
+          language of the Web page. This is meant to assist search engines and
+          browsers.
+        </p>
+        <p>The following example specifies English as the language:</p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;!DOCTYPE html&gt;<br />&lt;html lang=&quot;en&quot;&gt;<br />&lt;body&gt;<br />...<br />&lt;/body&gt;<br />&lt;/html&gt;
+        </div>
+      </div>
+      <div>
+        <p>
+          Country codes can also be added to the language code in the
+          <code class="codehighlighter">lang</code> attribute. So, the first two
+          characters define the language of the HTML page, and the last two
+          characters define the country.
+        </p>
+        <p>
+          The following example specifies English as the language and United
+          States as the country:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;!DOCTYPE html&gt;<br />&lt;html lang=&quot;en-US&quot;&gt;<br />&lt;body&gt;<br />...<br />&lt;/body&gt;<br />&lt;/html&gt;
+        </div>
+      </div>
+      <div>
+        <h2>The title Attribute</h2>
+        <p>
+          The <code class="codehighlighter">title</code> attribute defines some
+          extra information about an element.
+        </p>
+        <p>
+          The value of the title attribute will be displayed as a tooltip when
+          you mouse over the element:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;
+        </div>
+      </div>
+      <div>
+        <h2>We Suggest: Always Use Lowercase Attributes</h2>
+        <p>The HTML standard does not require lowercase attribute names.</p>
+        <p>
+          The title attribute (and all other attributes) can be written with
+          uppercase or lowercase like <strong>title</strong> or
+          <strong>TITLE</strong>.
+        </p>
+        <p>
+          However, W3C <strong>recommends</strong> lowercase attributes in HTML,
+          and <strong>demands</strong> lowercase attributes for stricter
+          document types like XHTML.
+        </p>
+      </div>
+      <div>
+        <h2>We Suggest: Always Quote Attribute Values</h2>
+        <p>
+          The HTML standard does not require quotes around attribute values.
+        </p>
+        <p>
+          However, We<b>recommends</b> quotes in HTML, and
+          <strong>demands</strong> quotes for stricter document types like
+          XHTML.
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Good</h3>
+        <div class="Container__ExampleCode">
+          &lt;a href=&quot;https://www.w3schools.com/html/&quot;&gt;Visit our
+          HTML tutorial&lt;/a&gt;
+        </div>
+      </div>
+      <div class="Container__Example">
+        <h3>Bad</h3>
+        <div class="Container__ExampleCode">
+          &lt;a href=https://www.w3schools.com/html/&gt;Visit our HTML
+          tutorial&lt;/a&gt;
+        </div>
+      </div>
+      <div>
+        <h2>Chapter Summary</h2>
+        <ul>
+          <li>All HTML elements can have <strong>attributes</strong></li>
+          <li>
+            The <code class="codehighlighter">href</code> attribute of
+            <code class="codehighlighter"> &lt;a&gt;</code> specifies the URL of
+            the page the link goes to
+          </li>
+          <li>
+            The <code class="codehighlighter">src</code> attribute of
+            <code class="codehighlighter"> &lt;img&gt;</code> specifies the path
+            to the image to be displayed
+          </li>
+          <li>
+            The <code class="codehighlighter">width</code> and
+            <code class="codehighlighter">height</code> attributes of
+            <code class="codehighlighter">&lt;img&gt;</code> provide size
+            information for images
+          </li>
+          <li>
+            The <code class="codehighlighter">alt</code> attribute of
+            <code class="codehighlighter"> &lt;img&gt;</code> provides an
+            alternate text for an image
+          </li>
+          <li>
+            The <code class="codehighlighter">style</code> attribute is used to
+            add styles to an element, such as color, font, size, and more
+          </li>
+          <li>
+            The <code class="codehighlighter">lang</code> attribute of the
+            <code class="codehighlighter">&lt;html&gt;</code> tag declares the
+            language of the Web page
+          </li>
+          <li>
+            The <code class="codehighlighter">title</code> attribute defines
+            some extra information about an element
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="Footer">
+      <p>
+        This Tutorial is made By Manish Mohapatra,Alok Kumar and Ritesh Samal.
+        This is only for the purpose of submitting as an assignment to Our
+        proffessor who had given this task to us. The use of this tutorial for
+        any other purposes is completely prohibited.
+      </p>
+      <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>
