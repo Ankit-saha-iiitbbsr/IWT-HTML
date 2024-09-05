@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/iiitlogo.jpg" alt="iiitlogo" class="Header__logo" />
+      <h2 class="Header__heading">HTML Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="Introduction.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li>
+            <a href="Basic.html" class="Sidebar__link">Basic</a>
+          </li>
+          <li>
+            <a href="Elements.html" class="Sidebar__link">Elements</a>
+          </li>
+          <li>
+            <a href="Attributes.html" class="Sidebar__link">Attributes</a>
+          </li>
+          <li><a href="Headings.html" class="Sidebar__link">Headings</a></li>
+          <li>
+            <a href="Paragraphs.html" class="Sidebar__link">Paragraphs</a>
+          </li>
+          <li><a href="Styles.html" class="Sidebar__link">Styles</a></li>
+          <li>
+            <a href="Formatting.html" class="Sidebar__link">Formatting</a>
+          </li>
+          <li><a href="Css.html" class="Sidebar__link">Css</a></li>
+          <li class="active">
+            <a href="Links.html" class="Sidebar__link">Links</a>
+          </li>
+          <li><a href="Images.html" class="Sidebar__link">Images</a></li>
+          <li><a href="Tables.html" class="Sidebar__link">Tables</a></li>
+          <li><a href="Lists.html" class="Sidebar__link">Lists</a></li>
+          <li><a href="Classes.html" class="Sidebar__link">Classes</a></li>
+          <li><a href="Id.html" class="Sidebar__link">Id</a></li>
+          <li><a href="Head.html" class="Sidebar__link">Head</a></li>
+          <li>
+            <a href="Block&inline.html" class="Sidebar__link">Block&inline</a>
+          </li>
+        </ul>
+
+        <ul>
+          <h3>HTML Forms</h3>
+          <li><a href="Form" class="Sidebar__link">Form</a></li>
+          <li>
+            <a href="FormElements.html" class="Sidebar__link">Form Elements</a>
+          </li>
+          <li>
+            <a href="Inputtypes.html" class="Sidebar__link">Input types</a>
+          </li>
+          <li>
+            <a href="InputAttributes.html" class="Sidebar__link"
+              >Input Attributes</a
+            >
+          </li>
+          <li>
+            <a href="InputFormAttributes.html" class="Sidebar__link"
+              >Input Form Attributes</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <h3>HTML Media</h3>
+          <li><a href="Video.html" class="Sidebar__link">Video</a></li>
+          <li><a href="Svg.html" class="Sidebar__link">Svg</a></li>
+        </ul>
+      </div>
+      <div class="Sidebar__footer">
+        <img src="img/iiit2.jpg" alt="iiit" />
+        <p>&#169; All Rights reserved</p>
+      </div>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="Introduction.html" class="Navbar__text active">Html Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>HTML Links</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="Css.html" class="Container__Button">Previous</a>
+        <a href="Images.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+        <p>
+          Links are found in nearly all web pages. Links allow users to click
+          their way from page to page.
+        </p>
+      </div>
+      <div>
+        <h2>HTML Links - Hyperlinks</h2>
+        <p>HTML links are hyperlinks.</p>
+        <p>You can click on a link and jump to another document.</p>
+        <p>
+          When you move the mouse over a link, the mouse arrow will turn into a
+          little hand.
+        </p>
+      </div>
+      <div>
+        <h2>HTML Links - Syntax</h2>
+        <p>
+          The HTML <code class="codehighlighter">&lt;a&gt;</code> tag defines a
+          hyperlink. It has the following syntax:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;a href=&quot;<i>url</i>&quot;&gt;<i>link text</i>&lt;/a&gt;
+        </div>
+      </div>
+      <div>
+        <p>
+          The most important attribute of the
+          <code class="codehighlighter">&lt;a&gt;</code>
+          <a>
+            element is the <code class="codehighlighter"> href</code> attribute,
+            which indicates the link's destination.</a
+          >
+        </p>
+        <p>
+          The <em>link text</em> is the part that will be visible to the reader.
+        </p>
+        <p>
+          Clicking on the link text, will send the reader to the specified URL
+          address.
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;a href=&quot;https://www.google.com/&quot;&gt;Visit
+          Google.com!&lt;/a&gt;
+        </div>
+      </div>
+      <div>
+        <p>By default, links will appear as follows in all browsers:</p>
+        <ul>
+          <li>An unvisited link is underlined and blue</li>
+          <li>A visited link is underlined and purple</li>
+          <li>An active link is underlined and red</li>
+        </ul>
+      </div>
+      <div>
+        <h2>HTML Links - The target Attribute</h2>
+        <p>
+          By default, the linked page will be displayed in the current browser
+          window. To change this, you must specify another target for the link.
+        </p>
+        <p>
+          The <code class="codehighlighter">target</code> attribute specifies
+          where to open the linked document.
+        </p>
+        <p>
+          The <code class="codehighlighter">target</code> attribute can have one
+          of the following values:
+        </p>
+        <ul>
+          <li>
+            <code class="codehighlighter">_self</code> - Default. Opens the
+            document in the same window/tab as it was clicked
+          </li>
+          <li>
+            <code class="codehighlighter">_blank</code> - Opens the document in
+            a new window or tab
+          </li>
+          <li>
+            <code class="codehighlighter">_parent</code> - Opens the document in
+            the parent frame
+          </li>
+          <li>
+            <code class="codehighlighter">_top</code> - Opens the document in
+            the full body of the window
+          </li>
+        </ul>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;a href=&quot;https://www.google.com/&quot;
+          target=&quot;_blank&quot;&gt;Visit google!&lt;/a&gt;
+        </div>
+      </div>
+      <div>
+        <h2>Absolute URLs vs. Relative URLs</h2>
+        <p>
+          Both examples above are using an <strong>absolute URL</strong> (a full
+          web address) in the
+          <code class="codehighlighter">href</code> attribute.
+        </p>
+        <p>
+          A local link (a link to a page within the same website) is specified
+          with a <strong>relative URL</strong> (without the
+          &quot;https://www&quot; part):
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;h2&gt;Absolute URLs&lt;/h2&gt;<br />&lt;p&gt;&lt;a
+          href=&quot;https://www.facebook.com/&quot;&gt;facebook&lt;/a&gt;&lt;/p&gt;<br />
+          &lt;p&gt;&lt;a
+          href=&quot;https://www.google.com/&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;<br /><br />&lt;h2&gt;Relative
+          URLs&lt;/h2&gt;<br />&lt;p&gt;&lt;a
+          href=&quot;html_images.asp&quot;&gt;HTML Images&lt;/a&gt;&lt;/p&gt;<br />&lt;p&gt;&lt;a
+          href=&quot;/css/default.asp&quot;&gt;CSS Tutorial&lt;/a&gt;&lt;/p&gt;
+        </div>
+      </div>
+    </main>
+    <footer class="Footer">
+      <p>
+        This Tutorial is made By Manish Mohapatra,Alok Kumar and Ritesh Samal.
+        This is only for the purpose of submitting as an assignment to Our
+        proffessor who had given this task to us. The use of this tutorial for
+        any other purposes is completely prohibited.
+      </p>
+      <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>

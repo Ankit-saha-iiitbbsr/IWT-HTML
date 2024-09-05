@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/iiitlogo.jpg" alt="iiitlogo" class="Header__logo" />
+      <h2 class="Header__heading">HTML Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="Introduction.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li>
+            <a href="Basic.html" class="Sidebar__link">Basic</a>
+          </li>
+          <li>
+            <a href="Elements.html" class="Sidebar__link">Elements</a>
+          </li>
+          <li>
+            <a href="Attributes.html" class="Sidebar__link">Attributes</a>
+          </li>
+          <li><a href="Headings.html" class="Sidebar__link">Headings</a></li>
+          <li>
+            <a href="Paragraphs.html" class="Sidebar__link">Paragraphs</a>
+          </li>
+          <li><a href="Styles.html" class="Sidebar__link">Styles</a></li>
+          <li>
+            <a href="Formatting.html" class="Sidebar__link">Formatting</a>
+          </li>
+          <li><a href="Css.html" class="Sidebar__link">Css</a></li>
+          <li><a href="Links.html" class="Sidebar__link">Links</a></li>
+          <li><a href="Images.html" class="Sidebar__link">Images</a></li>
+          <li><a href="Tables.html" class="Sidebar__link">Tables</a></li>
+          <li><a href="Lists.html" class="Sidebar__link">Lists</a></li>
+          <li><a href="Classes.html" class="Sidebar__link">Classes</a></li>
+          <li><a href="Id.html" class="Sidebar__link">Id</a></li>
+          <li><a href="Head.html" class="Sidebar__link">Head</a></li>
+          <li>
+            <a href="Block&inline.html" class="Sidebar__link">Block&inline</a>
+          </li>
+        </ul>
+
+        <ul>
+          <h3>HTML Forms</h3>
+          <li><a href="Form.html" class="Sidebar__link">Form</a></li>
+          <li>
+            <a href="FormElements.html" class="Sidebar__link">Form Elements</a>
+          </li>
+          <li>
+            <a href="Inputtypes.html" class="Sidebar__link">Input types</a>
+          </li>
+          <li>
+            <a href="InputAttributes.html" class="Sidebar__link"
+              >Input Attributes</a
+            >
+          </li>
+          <li>
+            <a href="InputFormAttributes.html" class="Sidebar__link"
+              >Input Form Attributes</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <h3>HTML Media</h3>
+          <li class="active">
+            <a href="Video.html" class="Sidebar__link">Video</a>
+          </li>
+          <li><a href="Svg.html" class="Sidebar__link">Svg</a></li>
+        </ul>
+      </div>
+      <div class="Sidebar__footer">
+        <img src="img/iiit2.jpg" alt="iiit" />
+        <p>&#169; All Rights reserved</p>
+      </div>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="Introduction.html" class="Navbar__text active">Html Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>HTML Video</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="InputFormAttributes.html" class="Container__Button"
+          >Previous</a
+        >
+        <a href="Svg.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+        <p>
+          The HTML <code class="codehighlighter">&lt;video&gt;</code> element is
+          used to show a video on a web page.
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          <div style="text-align: center;">
+            <video id="video1" style="width: 600px; max-width: 100%;" controls>
+              <source src="img/video.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>The HTML &lt;video&gt; Element</h2>
+        <p>
+          To show a video in HTML, use the
+          <code class="codehighlighter">&lt;video&gt;</code> element:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;<br />
+          &nbsp; &lt;source src=&quot;movie.mp4&quot;
+          type=&quot;video/mp4&quot;&gt;<br />
+          &nbsp; &lt;source src=&quot;movie.ogg&quot;
+          type=&quot;video/ogg&quot;&gt;<br />
+          Your browser does not support the video tag.<br />
+          &lt;/video&gt;
+        </div>
+      </div>
+      <div>
+        <h2>How it Works</h2>
+        <p>
+          The <code class="codehighlighter">controls</code> attribute adds video
+          controls, like play, pause, and volume.
+        </p>
+        <p>
+          It is a good idea to always include
+          <code class="codehighlighter">width</code> and
+          <code class="codehighlighter">height</code> attributes. If height and
+          width are not set, the page might flicker while the video loads.
+        </p>
+        <p>
+          The <code class="codehighlighter">&lt;source&gt;</code> element allows
+          you to specify alternative video files which the browser may choose
+          from. The browser will use the first recognized format.
+        </p>
+        <p>
+          The text between the
+          <code class="codehighlighter">&lt;video&gt;</code> and
+          <code class="codehighlighter">&lt;/video&gt;</code> tags will only be
+          displayed in browsers that do not support the
+          <code class="codehighlighter">&lt;video&gt;</code> element.
+        </p>
+      </div>
+      <div>
+        <h2>HTML &lt;video&gt; Autoplay</h2>
+        <p>
+          To start a video automatically use the
+          <code class="codehighlighter">autoplay</code> attribute:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;video width=&quot;320&quot; height=&quot;240&quot; autoplay&gt;<br />
+          &nbsp; &lt;source src=&quot;movie.mp4&quot;
+          type=&quot;video/mp4&quot;&gt;<br />
+          &nbsp; &lt;source src=&quot;movie.ogg&quot;
+          type=&quot;video/ogg&quot;&gt;<br />
+          Your browser does not support the video tag.<br />
+          &lt;/video&gt;
+        </div>
+      </div>
+      <div>
+        <h2>HTML Video Formats</h2>
+        <p>
+          There are three supported video formats: MP4, WebM, and Ogg. The
+          browser support for the different formats is:
+        </p>
+      </div>
+      <table class="Container__table">
+        <tr>
+          <th style="width: 25%;">Browser</th>
+          <th style="width: 25%;">MP4</th>
+          <th style="width: 25%;">WebM</th>
+          <th style="width: 25%;">Ogg</th>
+        </tr>
+        <tr>
+          <td>Edge</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+        </tr>
+        <tr>
+          <td>Chrome</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+        </tr>
+        <tr>
+          <td>Firefox</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>NO</td>
+        </tr>
+        <tr>
+          <td>Opera</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+        </tr>
+      </table>
+      <div>
+        <h2>HTML Video - Media Types</h2>
+      </div>
+      <table class="Container__table" id="table1">
+        <tr>
+          <th style="width: 50%;">File Format</th>
+          <th style="width: 50%;">Media Type</th>
+        </tr>
+        <tr>
+          <td>MP4</td>
+          <td>video/mp4</td>
+        </tr>
+        <tr>
+          <td>WebM</td>
+          <td>video/webm</td>
+        </tr>
+        <tr>
+          <td>Ogg</td>
+          <td>video/ogg</td>
+        </tr>
+      </table>
+      <div>
+        <h2>HTML Video Tags</h2>
+      </div>
+      <table class="Container__table">
+        <tr>
+          <th style="width: 20%;">Tag</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>&lt;video&gt;</td>
+          <td>Defines a video or movie</td>
+        </tr>
+        <tr>
+          <td>&lt;source&gt;</td>
+          <td>
+            Defines multiple media resources for media elements, such as
+            &lt;video&gt; and &lt;audio&gt;
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;track&gt;</td>
+          <td>Defines text tracks in media players</td>
+        </tr>
+      </table>
+    </main>
+    <footer class="Footer">
+      <p>
+        This Tutorial is made By Manish Mohapatra,Alok Kumar and Ritesh Samal.
+        This is only for the purpose of submitting as an assignment to Our
+        proffessor who had given this task to us. The use of this tutorial for
+        any other purposes is completely prohibited.
+      </p>
+      <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>

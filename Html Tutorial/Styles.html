@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <header class="Header">
+      <img src="./img/iiitlogo.jpg" alt="iiitlogo" class="Header__logo" />
+      <h2 class="Header__heading">HTML Tutorial</h2>
+    </header>
+    <nav class="Sidebar">
+      <div>
+        <ul>
+          <li>
+            <a href="Introduction.html" class="Sidebar__link">Introduction</a>
+          </li>
+          <li>
+            <a href="Basic.html" class="Sidebar__link">Basic</a>
+          </li>
+          <li>
+            <a href="Elements.html" class="Sidebar__link">Elements</a>
+          </li>
+          <li >
+            <a href="Attributes.html" class="Sidebar__link">Attributes</a>
+          </li>
+          <li><a href="Headings.html" class="Sidebar__link">Headings</a></li>
+          <li>
+            <a href="Paragraphs.html" class="Sidebar__link">Paragraphs</a>
+          </li>
+          <li class="active"><a href="Styles.html" class="Sidebar__link">Styles</a></li>
+          <li>
+            <a href="Formatting.html" class="Sidebar__link">Formatting</a>
+          </li>
+          <li><a href="Css.html" class="Sidebar__link">Css</a></li>
+          <li><a href="Links.html" class="Sidebar__link">Links</a></li>
+          <li><a href="Images.html" class="Sidebar__link">Images</a></li>
+          <li><a href="Tables.html" class="Sidebar__link">Tables</a></li>
+          <li><a href="Lists.html" class="Sidebar__link">Lists</a></li>
+          <li><a href="Classes.html" class="Sidebar__link">Classes</a></li>
+          <li><a href="Id.html" class="Sidebar__link">Id</a></li>
+          <li><a href="Head.html" class="Sidebar__link">Head</a></li>
+	  <li>
+            <a href="Block&inline.html" class="Sidebar__link">Block&inline</a>
+          </li>
+        </ul>
+
+        <ul>
+          <h3>HTML Forms</h3>
+          <li><a href="Form.html" class="Sidebar__link">Form</a></li>
+          <li>
+            <a href="FormElements.html" class="Sidebar__link">Form Elements</a>
+          </li>
+          <li>
+            <a href="Inputtypes.html" class="Sidebar__link">Input types</a>
+          </li>
+          <li>
+            <a href="InputAttributes.html" class="Sidebar__link"
+              >Input Attributes</a
+            >
+          </li>
+          <li>
+            <a href="InputFormAttributes.html" class="Sidebar__link"
+              >Input Form Attributes</a
+            >
+          </li>
+        </ul>
+	<ul>
+          <h3>HTML Media</h3>
+          <li><a href="Video.html" class="Sidebar__link">Video</a></li>
+          <li><a href="Svg.html" class="Sidebar__link">Svg</a></li>
+        </ul>
+      </div>
+      <div class="Sidebar__footer">
+        <img src="img/iiit2.jpg" alt="iiit" />
+        <p>&#169; All Rights reserved</p>
+      </div>
+    </nav>
+    <nav class="Navbar">
+      <a href="index.html" class="Navbar__text">Home</a>
+      <a href="#" class="Navbar__text">About Us</a>
+      <a href="Introduction.html" class="Navbar__text active">Html Tutorial</a>
+    </nav>
+    <main class="Container">
+      <h1>HTML Styles</h1>
+      <div class="Container__ButtonsDiv">
+        <a href="Paragraphs.html" class="Container__Button">Previous</a>
+        <a href="Formatting.html" class="Container__Button">Next</a>
+      </div>
+      <div>
+        <p>
+          The HTML <code class="codehighlighter">style</code> attribute is used to
+          add styles to an element, such as color, font, size, and more.
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          <p style="font-size: 20px; color: red;">I am Red</p>
+          <p style="font-size: 20px; color: blue;">I am Blue</p>
+          <p style="font-size: 36px; margin: 12px 0;">I am Big</p>
+        </div>
+      </div>
+      <div>
+        <h2>The HTML Style Attribute</h2>
+        <p>
+          Setting the style of an HTML element, can be done with the
+          <code class="codehighlighter">style</code> attribute.
+        </p>
+        <p>
+          The HTML <code class="codehighlighter">style</code> attribute has the
+          following syntax:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;<em>tagname</em>
+          style=&quot;<em>property</em>:<em>value;</em>&quot;&gt;
+        </div>
+      </div>
+      <div>
+        <p>
+          The <em><strong>property</strong></em> is a CSS property. The
+          <em><strong>value</strong></em> is a CSS value.
+        </p>
+      </div>
+      <div>
+        <h2>Background Color</h2>
+        <p>
+          The CSS <code class="codehighlighter">background-color</code> property
+          defines the background color for an HTML element.
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;body style=&quot;background-color:powderblue;&quot;&gt;<br /><br />&lt;h1&gt;This
+          is a heading&lt;/h1&gt;<br />&lt;p&gt;This is a
+          paragraph.&lt;/p&gt;<br /><br />&lt;/body&gt;
+        </div>
+      </div>
+      <div>
+        <h2>Text Color</h2>
+        <p>
+          The CSS <code class="codehighlighter">color</code> property defines the
+          text color for an HTML element:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;h1 style=&quot;color:blue;&quot;&gt;This is a
+          heading&lt;/h1&gt;<br />
+          &lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;
+        </div>
+      </div>
+      <div>
+        <h2>Fonts</h2>
+        <p>
+          The CSS <code class="codehighlighter">font-family</code> property defines
+          the font to be used for an HTML element:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;h1 style=&quot;font-family:verdana;&quot;&gt;This is a
+          heading&lt;/h1&gt;<br />&lt;p
+          style=&quot;font-family:courier;&quot;&gt;This is a
+          paragraph.&lt;/p&gt;
+        </div>
+      </div>
+      <div>
+        <h2>Text Size</h2>
+        <p>
+          The CSS <code class="codehighlighter">font-size</code> property defines
+          the text size for an HTML element:
+        </p>
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+          &lt;h1 style=&quot;font-size:300%;&quot;&gt;This is a
+          heading&lt;/h1&gt;<br />&lt;p
+          style=&quot;font-size:160%;&quot;&gt;This is a paragraph.&lt;/p&gt;
+        </div>
+      </div>
+      <div>
+        <h2>Text Alignment</h2>
+        <p>The CSS <code class="codehighlighter">text-align</code> property defines the horizontal text alignment for an HTML element:</p>
+        <div class="w3-example">
+      </div>
+      <div class="Container__Example">
+        <h3>Example</h3>
+        <div class="Container__ExampleCode">
+            &lt;h1 style=&quot;text-align:center;&quot;&gt;Centered Heading&lt;/h1&gt;<br>
+            &lt;p style=&quot;text-align:center;&quot;&gt;Centered paragraph.&lt;/p&gt;
+        </div>
+      </div>
+      <div>
+        <h2>Chapter Summary</h2>
+        <ul>
+          <li>Use the <code class="codehighlighter">style</code> attribute for styling HTML elements</li>
+          <li>Use <code class="codehighlighter">background-color</code> for background color</li>
+          <li>Use <code class="codehighlighter">color</code> for text colors</li>
+          <li>Use <code class="codehighlighter">font-family</code> for text fonts</li>
+          <li>Use <code class="codehighlighter">font-size</code> for text sizes</li>
+          <li>Use <code class="codehighlighter">text-align</code> for text alignment</li>
+        </ul>
+      </div>
+    </main>
+    <footer class="Footer">
+      <p>
+        This Tutorial is made By Manish Mohapatra,Alok Kumar and Ritesh Samal.
+        This is only for the purpose of submitting as an assignment to Our
+        proffessor who had given this task to us. The use of this tutorial for
+        any other purposes is completely prohibited.
+      </p>
+      <p>&#169; All Rights reserved</p>
+    </footer>
+  </body>
+</html>
